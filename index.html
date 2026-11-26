@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LeoTV: Streaming e TV em 4K | Teste Grátis 3 Horas</title>
+  <meta name="description" content="Assista a mais de 20.000 canais ao vivo, filmes e séries em até 4K Ultra HD na LeoTV. Teste grátis de 3 horas sem cartão de crédito e suporte humano 24h." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="bg-glow"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <div class="logo-icon">L</div>
+        <span>Leo<em>TV</em></span>
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="#como-funciona">Como Funciona</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#planos">Planos</a>
+        <a href="#tutoriais">Tutoriais</a>
+        <a href="#faq">Dúvidas</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#planos" class="btn btn-secondary btn-sm">Ver Planos</a>
+        <button class="btn btn-primary btn-sm" onclick="openTrialModal()">Teste Grátis 3h</button>
+        <button class="mobile-menu-btn" aria-label="Abrir menu" onclick="toggleMobileMenu()">☰</button>
+      </div>
+    </div>
+
+    <div id="mobileDrawer" class="mobile-drawer">
+      <a href="#como-funciona" onclick="toggleMobileMenu()">Como Funciona</a>
+      <a href="#catalogo" onclick="toggleMobileMenu()">Catálogo</a>
+      <a href="#planos" onclick="toggleMobileMenu()">Planos e Preços</a>
+      <a href="#tutoriais" onclick="toggleMobileMenu()">Tutoriais por Aparelho</a>
+      <a href="#faq" onclick="toggleMobileMenu()">Perguntas Frequentes</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        LeoTV • Servidores CDN no Brasil • Ativação em 5 minutos
+      </div>
+
+      <h1>
+        Streaming e TV em <span class="highlight">4K Ultra HD</span> sem travamentos e sem fidelidade
+      </h1>
+
+      <p class="subtitle">
+        Mais de 20.000 canais ao vivo, filmes e séries sob demanda na sua Smart TV, TV Box, Fire Stick ou celular. Solicite seu teste grátis de 3 horas sem cartão de crédito.
+      </p>
+
+      <div class="hero-ctas">
+        <button class="btn btn-primary" onclick="openTrialModal()">
+          ▶ Solicitar Teste Grátis 3 Horas
+        </button>
+        <a href="#planos" class="btn btn-secondary">
+          Ver Planos a partir de R$ 30/mês
+        </a>
+      </div>
+
+      <div class="hero-trust">
+        <span>✓ Sem cartão de crédito no teste</span>
+        <span>✓ Tecnologia Anti-Buffer</span>
+        <span>✓ Suporte humano 24h no WhatsApp</span>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-value">+20.000<span>+</span></div>
+          <div class="stat-label">Canais ao Vivo (SD/HD/4K)</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">+60.000<span>+</span></div>
+          <div class="stat-label">Filmes e Séries VOD</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">99,9<span>%</span></div>
+          <div class="stat-label">Uptime com Rede CDN</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">24<span>/7</span></div>
+          <div class="stat-label">Suporte via WhatsApp</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Como Funciona -->
+  <section id="como-funciona">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Simples e Rápido</span>
+        <h2>Comece a assistir na LeoTV em menos de 5 minutos</h2>
+        <p>Sem antenas, sem cabos pela casa e sem contratos longos. Tudo funciona diretamente pela sua internet.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h3>Peça o seu teste grátis de 3h</h3>
+          <p>Preencha seu aparelho ou fale no WhatsApp. Enviamos seus dados de acesso em minutos, sem pedir cartão de crédito.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h3>Instale o aplicativo</h3>
+          <p>Baixe um player compatível (VU Player Pro, IBOplayer ou similar) na sua Smart TV, TV Box, Fire Stick ou celular.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h3>Assista em HD e 4K</h3>
+          <p>Acesse o guia de programação (EPG) e o catálogo completo de filmes e séries com baixa latência no Brasil.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catálogo Interativo -->
+  <section id="catalogo">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Catálogo Completo</span>
+        <h2>Tudo o que você gosta em um só lugar</h2>
+        <p>Explore as categorias incluídas em todos os planos da LeoTV, com atualização semanal automática.</p>
+      </div>
+
+      <div class="tabs-bar" id="catalogTabs">
+        <button class="tab-btn active" onclick="filterCatalog('todos', this)">Todos</button>
+        <button class="tab-btn" onclick="filterCatalog('esportes', this)">Esportes ao Vivo</button>
+        <button class="tab-btn" onclick="filterCatalog('filmes', this)">Filmes & Séries 4K</button>
+        <button class="tab-btn" onclick="filterCatalog('familia', this)">Infantil & Família</button>
+      </div>
+
+      <div class="catalog-grid" id="catalogGrid">
+        <div class="catalog-card" data-cat="esportes">
+          <span class="catalog-badge">4K / 60 FPS</span>
+          <h4>Futebol & Campeonatos</h4>
+          <p>Transmissões ao vivo com servidores dedicados para evitar travamentos em jogos decisivos.</p>
+        </div>
+        <div class="catalog-card" data-cat="filmes">
+          <span class="catalog-badge">Catálogo VOD</span>
+          <h4>Cinema em Casa</h4>
+          <p>Milhares de filmes dublados e legendados organizados por gênero, ano e qualidade Ultra HD.</p>
+        </div>
+        <div class="catalog-card" data-cat="filmes">
+          <span class="catalog-badge">Séries Completas</span>
+          <h4>Temporadas & Lançamentos</h4>
+          <p>Maratone suas séries favoritas com episódios organizados e histórico de onde parou.</p>
+        </div>
+        <div class="catalog-card" data-cat="familia">
+          <span class="catalog-badge">Kids & Família</span>
+          <h4>Desenhos e Animações</h4>
+          <p>Canais infantis 24 horas e acervo de animações para entreter as crianças com segurança.</p>
+        </div>
+        <div class="catalog-card" data-cat="esportes">
+          <span class="catalog-badge">Ao Vivo</span>
+          <h4>Lutas, Motores & NBA</h4>
+          <p>Cobertura esportiva internacional, automobilismo, basquete e eventos pay-per-view.</p>
+        </div>
+        <div class="catalog-card" data-cat="familia">
+          <span class="catalog-badge">EPG Integrado</span>
+          <h4>Canais Abertos & Notícias</h4>
+          <p>Programação regional, telejornais 24h e guia eletrônico com horários detalhados.</p>
+        </div>
+        <div class="catalog-card" data-cat="familia">
+          <span class="catalog-badge">Documentários</span>
+          <h4>Ciência, História & Natureza</h4>
+          <p>Conteúdo educativo e documentários premiados disponíveis ao vivo e sob demanda.</p>
+        </div>
+        <div class="catalog-card" data-cat="filmes">
+          <span class="catalog-badge">Multitelas</span>
+          <h4>Compatível com Tudo</h4>
+          <p>Assista na Smart TV da sala ou leve a programação no celular durante suas viagens.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparativo vs TV a Cabo -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Economia Real</span>
+        <h2>Streaming moderno vs. TV a Cabo tradicional</h2>
+        <p>Compare o custo-benefício antes de tomar sua decisão.</p>
+      </div>
+
+      <div class="comparison-wrap">
+        <div class="compare-box">
+          <h3>TV a Cabo Tradicional</h3>
+          <div class="compare-price">R$ 90 – R$ 250 <small>/mês</small></div>
+          <ul class="compare-list">
+            <li>✕ Média de apenas 120 a 150 canais</li>
+            <li>✕ Contrato com fidelidade de 12 meses</li>
+            <li>✕ Cobrança extra por ponto adicional e instalação</li>
+            <li>✕ Filmes recentes cobrados à parte por aluguel</li>
+            <li>✕ Atendimento demorado via URA telefônica</li>
+          </ul>
+        </div>
+
+        <div class="compare-box featured">
+          <h3>LeoTV Streaming 4K</h3>
+          <div class="compare-price featured-price">A partir de R$ 23,33 <small>/mês</small></div>
+          <ul class="compare-list">
+            <li>✓ +20.000 canais ao vivo + 60.000 filmes e séries</li>
+            <li>✓ Zero fidelidade — renove apenas quando quiser</li>
+            <li>✓ Sem decodificador caro nem furos na parede</li>
+            <li>✓ Qualidade SD, HD, Full HD e 4K inclusas</li>
+            <li>✓ Suporte humano 24h direto pelo WhatsApp</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Planos e Preços -->
+  <section id="planos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Preços Transparentes</span>
+        <h2>Escolha o plano ideal na LeoTV</h2>
+        <p>Todos os planos oferecem acesso ao catálogo completo, EPG e suporte 7 dias por semana.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="plan-card">
+          <div class="plan-name">Plano Mensal</div>
+          <div class="plan-price">R$ 30<span>/mês</span></div>
+          <div class="plan-equiv">Pagamento único mensal • Sem fidelidade</div>
+          <ul class="plan-features">
+            <li><span class="check-icon">✓</span> +20.000 Canais ao Vivo</li>
+            <li><span class="check-icon">✓</span> +60.000 Filmes & Séries</li>
+            <li><span class="check-icon">✓</span> Qualidade SD / HD / FHD / 4K</li>
+            <li><span class="check-icon">✓</span> Guia de Programação (EPG)</li>
+            <li><span class="check-icon">✓</span> Smart TV, TV Box, Celular e PC</li>
+            <li><span class="check-icon">✓</span> Suporte WhatsApp 24/7</li>
+          </ul>
+          <button class="btn btn-secondary" onclick="openTrialModal('Plano Mensal (R$ 30)')">Assinar Mensal</button>
+        </div>
+
+        <div class="plan-card popular">
+          <div class="popular-tag">Mais Popular</div>
+          <div class="plan-name">Plano Trimestral</div>
+          <div class="plan-price">R$ 80<span>/3 meses</span></div>
+          <div class="plan-equiv">Equivalente a R$ 26,67 por mês</div>
+          <ul class="plan-features">
+            <li><span class="check-icon">✓</span> +20.000 Canais ao Vivo</li>
+            <li><span class="check-icon">✓</span> +60.000 Filmes & Séries</li>
+            <li><span class="check-icon">✓</span> Qualidade SD / HD / FHD / 4K</li>
+            <li><span class="check-icon">✓</span> Guia de Programação (EPG)</li>
+            <li><span class="check-icon">✓</span> Servidores CDN Prioritários</li>
+            <li><span class="check-icon">✓</span> Suporte WhatsApp 24/7</li>
+          </ul>
+          <button class="btn btn-primary" onclick="openTrialModal('Plano Trimestral (R$ 80)')">Escolher Trimestral</button>
+        </div>
+
+        <div class="plan-card">
+          <div class="plan-name">Plano Anual</div>
+          <div class="plan-price">R$ 280<span>/ano</span></div>
+          <div class="plan-equiv">Equivalente a R$ 23,33 por mês (Economize R$ 80)</div>
+          <ul class="plan-features">
+            <li><span class="check-icon">✓</span> +20.000 Canais ao Vivo</li>
+            <li><span class="check-icon">✓</span> +60.000 Filmes & Séries</li>
+            <li><span class="check-icon">✓</span> Qualidade SD / HD / FHD / 4K</li>
+            <li><span class="check-icon">✓</span> Guia de Programação (EPG)</li>
+            <li><span class="check-icon">✓</span> Configuração Assistida Completa</li>
+            <li><span class="check-icon">✓</span> Suporte VIP WhatsApp 24/7</li>
+          </ul>
+          <button class="btn btn-secondary" onclick="openTrialModal('Plano Anual (R$ 280)')">Assinar Anual</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tutoriais por Aparelho -->
+  <section id="tutoriais">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Guias de Instalação</span>
+        <h2>Como configurar no seu dispositivo</h2>
+        <p>Selecione o aparelho que você pretende usar e veja o passo a passo resumido.</p>
+      </div>
+
+      <div class="tabs-bar">
+        <button class="tab-btn active" onclick="showTutorial('smarttv', this)">Smart TV (Samsung/LG/Android)</button>
+        <button class="tab-btn" onclick="showTutorial('tvbox', this)">TV Box & Fire Stick</button>
+        <button class="tab-btn" onclick="showTutorial('celular', this)">Celular (Android & iPhone)</button>
+        <button class="tab-btn" onclick="showTutorial('internet', this)">Dicas Anti-Buffer</button>
+      </div>
+
+      <div class="tutorial-panel">
+        <div class="tutorial-content" id="tutorialContent">
+          <div>
+            <h3 id="tutTitle">Configuração em Smart TV</h3>
+            <ul class="tutorial-steps" id="tutSteps">
+              <li><strong>1. Abra a loja de aplicativos:</strong> Acesse a loja oficial da sua TV (Samsung Apps, LG Content Store ou Google Play).</li>
+              <li><strong>2. Baixe o player recomendado:</strong> Procure por aplicativos compatíveis como IPTV Smarters Pro, Duplex ou IBO Player.</li>
+              <li><strong>3. Insira seus dados:</strong> Solicite seu teste de 3h na LeoTV e digite o usuário, senha e URL do servidor enviados pelo suporte.</li>
+            </ul>
+          </div>
+          <div class="tutorial-tip-box">
+            <h4>Precisa de ajuda remota?</h4>
+            <p id="tutTip">A equipe LeoTV configura sua Smart TV passo a passo pelo WhatsApp em menos de 5 minutos, sem custo adicional.</p>
+            <button class="btn btn-primary btn-sm" onclick="openTrialModal()">Pedir Ajuda e Teste Grátis</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tire suas Dúvidas</span>
+        <h2>Perguntas Frequentes</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item open">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Como funciona o teste grátis de 3 horas?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Você solicita o teste clicando em qualquer botão da página, informa qual aparelho vai utilizar e recebe seus dados de acesso da LeoTV em poucos minutos no WhatsApp. Você terá 3 horas completas para testar sem cartão de crédito e sem compromisso.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            O serviço trava ou tem buffering? Qual internet preciso?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Utilizamos rede CDN com servidores no Brasil e balanceamento de carga para manter a estabilidade mesmo em jogos ao vivo. Recomendamos conexão estável de pelo menos 15 Mbps para canais HD e 30 Mbps para conteúdo em 4K.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Quais aparelhos e aplicativos são compatíveis?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Funciona em Smart TVs (Samsung, LG, TCL, Philco, Roku/Android TV), TV Box Android, Amazon Fire TV Stick, celulares Android, iPhone/iPad e computadores via player Xtream Codes ou lista M3U.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Preciso pagar multa se quiser cancelar?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Não! Na LeoTV não trabalhamos com contrato de fidelidade nem renovação automática obrigatória. Ao final do seu período (mensal, trimestral ou anual), você decide se deseja renovar.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner CTA Final -->
+  <section>
+    <div class="container">
+      <div class="cta-banner">
+        <h2>Pronto para testar a qualidade 4K na sua TV?</h2>
+        <p>Libere seu acesso gratuito de 3 horas na LeoTV agora mesmo e comprove a estabilidade dos nossos servidores.</p>
+        <button class="btn btn-primary" onclick="openTrialModal()">
+          Solicitar Teste Grátis 3h →
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="#" class="logo footer-logo">
+            <div class="logo-icon">L</div>
+            <span>Leo<em>TV</em></span>
+          </a>
+          <p>Plataforma de streaming e IPTV com infraestrutura própria no Brasil, catálogo sob demanda e suporte humano 24 horas.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Conteúdo</h4>
+          <ul>
+            <li><a href="#como-funciona">Como Funciona</a></li>
+            <li><a href="#catalogo">Catálogo de Canais</a></li>
+            <li><a href="#planos">Tabela de Planos</a></li>
+            <li><a href="#faq">Perguntas Frequentes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Tutoriais</h4>
+          <ul>
+            <li><a href="#tutoriais">Configurar na Smart TV</a></li>
+            <li><a href="#tutoriais">Configurar no TV Box</a></li>
+            <li><a href="#tutoriais">Configurar no Fire Stick</a></li>
+            <li><a href="#tutoriais">Resolver Travamentos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Atendimento 24h</h4>
+          <ul>
+            <li><a href="#" onclick="openTrialModal(); return false;">Solicitar Teste 3h</a></li>
+            <li><a href="mailto:contato@leotv.com.br">contato@leotv.com.br</a></li>
+            <li>Atendimento WhatsApp: 24/7</li>
+            <li>São Paulo / SP - Brasil</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 LeoTV. Todos os direitos reservados. Uso recomendado com conexão regular de internet.</span>
+        <span>Política de Privacidade • Termos de Uso • Aviso Legal</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante WhatsApp -->
+  <a href="#" class="whatsapp-float" onclick="openTrialModal(); return false;" aria-label="Atendimento via WhatsApp">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.766.469 3.484 1.344 5l-1.406 5.156 5.281-1.375c1.469.797 3.109 1.219 4.75 1.219 5.516 0 9.969-4.453 9.969-9.969S17.547 2 12.031 2zm5.813 14.125c-.25.703-1.438 1.344-2 1.422-.516.078-1.172.109-1.891-.125-.438-.141-1-.328-1.719-.641-3-1.297-4.969-4.328-5.125-4.531-.156-.203-1.219-1.625-1.219-3.094 0-1.469.766-2.188 1.047-2.484.281-.297.609-.375.813-.375.203 0 .406 0 .578.016.188.016.438-.078.688.516.25.609.859 2.094.938 2.25.078.156.125.344.031.547-.094.203-.141.328-.297.5-.156.172-.313.391-.453.516-.156.141-.313.297-.141.594.172.297.781 1.281 1.672 2.078 1.156 1.031 2.125 1.344 2.422 1.5.297.156.469.125.641-.078.172-.203.75-.875.953-1.172.203-.297.406-.25.672-.156.266.094 1.719.813 2.016.953.297.156.484.219.563.344.078.125.078.719-.172 1.422z"/>
+    </svg>
+    <span>Teste Grátis 3h</span>
+  </a>
+
+  <!-- Modal Solicitar Teste / Plano -->
+  <div class="modal-backdrop" id="trialModal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeTrialModal()" aria-label="Fechar">×</button>
+      <h3 class="modal-title">Solicitar Acesso LeoTV / Teste 3h</h3>
+      <p class="modal-subtitle">
+        Preencha abaixo para iniciar seu atendimento imediato no WhatsApp.
+      </p>
+
+      <form onsubmit="submitWhatsAppForm(event)">
+        <div class="form-group">
+          <label for="userName">Seu Nome</label>
+          <input type="text" id="userName" placeholder="Ex: João Silva" required />
+        </div>
+
+        <div class="form-group">
+          <label for="userDevice">Onde vai assistir?</label>
+          <select id="userDevice" required>
+            <option value="Smart TV">Smart TV (Samsung / LG / Android TV)</option>
+            <option value="TV Box / Fire Stick">TV Box / Amazon Fire Stick</option>
+            <option value="Celular Android / iPhone">Celular (Android ou iPhone)</option>
+            <option value="Computador / Notebook">Computador / Notebook</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="userInterest">Interesse</label>
+          <input type="text" id="userInterest" value="Teste Grátis 3 Horas" readonly />
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full">
+          Enviar via WhatsApp Agora →
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
